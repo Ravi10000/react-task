@@ -1,0 +1,47 @@
+.post {
+    padding: 20px 20px;
+    box-shadow: 4px 4px 10px -5px #8080809d;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    color: #313131;
+
+    .title {
+        margin: 10px 0;
+    }
+
+    .content {
+        margin: 10px 15px;
+    }
+
+    .likes {
+        align-self: flex-end;
+        padding: 0 10px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        img {
+            width: 25px;
+        }
+    }
+
+    h4 {
+        margin: 10px 10px;
+    }
+
+    .tags {
+        display: flex;
+        gap: 10px;
+
+        .tag {
+            font-size: .8rem;
+            font-weight: 600;
+            padding: 10px 15px;
+            background-color: #ADFFD8;
+            border-radius: 50px;
+        }
+    }
+}

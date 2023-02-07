@@ -1,0 +1,13 @@
+.post-list {
+    display: grid;
+    flex-direction: column;
+    gap: 25px;
+    place-items: center;
+}
+
+@media (min-width: 800px) {
+    .post-list {
+        gap: 50px;
+        grid-template-columns: 1fr 1fr;
+    }
+}

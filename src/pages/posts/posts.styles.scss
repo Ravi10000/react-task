@@ -1,0 +1,109 @@
+.posts-page {
+    header {
+        position: relative;
+        background-color: var(--primary-clr);
+        padding: 25px 0;
+
+        img {
+            width: 100%;
+            opacity: .6;
+        }
+
+        .heading {
+            width: max-content;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+
+            h1 {
+                font-family: 'Berkshire Swash', sans-serif;
+            }
+
+            .subtitle {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;
+            }
+        }
+    }
+
+    main {
+        padding: 25px 10px;
+
+        h2 {
+            margin: 20px 25px;
+            color: var(--heading-clr);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .actions {
+            padding: 25px;
+            text-align: center;
+
+            .show-more {
+                cursor: pointer;
+                color: var(--heading-clr);
+                font-weight: 600;
+                font-size: .9rem;
+            }
+
+            .end-msg {
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .posts-page {
+        header {
+            .heading {
+                h1 {
+                    font-size: 3rem;
+                }
+
+                .subtitle {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .posts-page {
+        header {
+            padding: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                max-width: 400px;
+                border-radius: 10px;
+                opacity: .75;
+                box-shadow: 4px 4px 10px -5px #8080809d;
+
+            }
+
+            .heading {
+                position: static;
+                transform: translate(0);
+
+                h1 {
+                    font-size: 5rem;
+                }
+
+                .subtitle {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        main {
+            padding: 25px 75px;
+        }
+    }
+
+}

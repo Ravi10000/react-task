@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-clr: #ffba33;
+  --heading-clr: #f2a000;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
